@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url(./165857-svet-purpur-elektrichestvo-rozovyj-razvlechenie-2560x1440.jpg);
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+.clock__body {
+    background-image: url(./imgonline-com-ua-Resize-7EeqErbYHBO6TGR.jpg);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 15px solid #2877e5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock__body:hover{
+    background-image: url(./собака.jpg);
+}
+
+.clock__hours {
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    animation: clock__rotate-hours 43200s steps(60, end) infinite;
+    box-shadow: 1px 1px 2px rgba(155, 16, 16, 0.3);
+}
+
+@keyframes clock__rotate-hours {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.clock__minutes {
+    z-index: 2;
+    background: #000;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    animation: clock__rotate-minutes 3600s steps(60, end) infinite;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@keyframes clock__rotate-minutes {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.clock__seconds {
+    z-index: 3;
+    height: 240px;
+    width: 2px;
+    background: #D56851;
+    border-radius: 2px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 1px);
+    transform-origin: 1px 60px;
+    animation: clock__rotate-seconds 60s steps(60, end) infinite;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+}
+
+@keyframes clock__rotate-seconds {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.clock-minutes:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D56851;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+    top: calc(100% - 4px);
+    left: calc(100% - 5px);
+}
+
+
+
+.clock__round {}
+
+.clock__numbers {
+    font-size: 35px;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.clock__numbers img {
+    width: 45px;
+    height: 45px;
+
+}
+
+.clock__numbers-item:nth-child(1) {
+    left: 218px;
+    top: 5px;
+    position: absolute;
+}
+
+.clock__numbers-item:nth-child(2) {
+    top: 218px;
+    right: 5px;
+    position: absolute;
+}
+
+.clock__numbers-item:nth-child(3) {
+    position: absolute;
+    bottom: -3px;
+    left: 218px;
+}
+
+.clock__numbers-item:nth-child(4) {
+    position: absolute;
+    left: 5px;
+    ;
+    top: 218px;
+}
+
+.clock__numbers-item:nth-child(5) {
+    right: 2%;
+    bottom: 25%;
+}
+
+.clock__numbers-item:nth-child(6) {
+    right: 19%;
+    bottom: 3%;
+}
+
+.clock__numbers-item:nth-child(7) {
+    right: 48%;
+    bottom: 7%;
+}
+
+.clock__numbers-item:nth-child(8) {
+    left: 0;
+    top: 50%;
+}
+
+.clock__numbers-item:nth-child(9) {
+    left: 2%;
+    bottom: 25%;
+}
+
+.clock__numbers-item:nth-child(10) {
+    left: 2%;
+    top: 50%;
+}
+
+.clock__numbers-item:nth-child(11) {
+    left: 2%;
+    top: 25%;
+}
+
+.clock__numbers-item:nth-child(12) {
+    left: 17%;
+    top: 5%;
+}
+
+.clock__numbers-item:nth-child(13) {
+    left: 44%;
+    bottom: 27%;
+    font-family: ;
+}
